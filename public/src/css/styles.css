@@ -1,0 +1,243 @@
+html {
+  background-color: #36464e;
+}
+
+body {
+  font-family: "roboto";
+  font-weight: 100;
+  overflow-x: hidden;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: relative;
+}
+
+.nav {
+  position: fixed;
+  display: inline-block;
+  z-index: 1000;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(38, 50, 56, 0.95);
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in-out;
+}
+.nav__container {
+  padding: 1rem 3rem;
+  max-width: 800px;
+}
+.nav__title {
+  color: rgba(255, 255, 255, 0.78);
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+}
+.nav--is-visible {
+  transform: translateY(0);
+  transition: transform 600ms ease-in-out;
+}
+
+.images {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.images--grey {
+  background-color: #36464e;
+}
+.images--pink {
+  background-color: #e91e63;
+}
+.images--blue {
+  background-color: #2196f3;
+}
+.images--orange {
+  background-color: #ff9800;
+}
+.images--red {
+  background-color: red;
+}
+.images__info {
+  position: absolute;
+  z-index: 10;
+  bottom: 10vw;
+  left: 20%;
+  width: 100%;
+  padding-left: 20px;
+  background: rgba(0, 0, 0, 0);
+  border-left: 4px solid white;
+}
+.images__info-title {
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.images__info--right {
+  border: none;
+  text-align: right;
+  border-top: 4px solid white;
+  left: unset;
+  bottom: unset;
+  width: 10%;
+  top: 50%;
+  right: 10%;
+}
+.images__info--left {
+  border: none;
+  text-align: right;
+  padding-right: 20px;
+  border-right: 4px solid white;
+  left: unset;
+  bottom: unset;
+  width: 10%;
+  top: 20%;
+}
+.images__item {
+  position: absolute;
+  height: auto;
+  z-index: 2;
+}
+.images__item--left {
+  left: -20%;
+  bottom: 0;
+  height: 100vh;
+  width: auto;
+}
+.images__item--right {
+  right: 0;
+  bottom: 0;
+  max-height: 100vmin;
+  width: auto;
+}
+.images__item--center {
+  left: 0;
+  bottom: 0;
+  max-width: 100vmin;
+}
+.images__item--hands-left {
+  top: 50%;
+  height: auto;
+  width: 55%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+}
+.images__item--hands-right {
+  top: 50%;
+  height: auto;
+  width: 55%;
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0;
+}
+.images__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.images__canvas--bottom-left {
+  top: unset;
+  left: unset;
+  bottom: unset;
+  right: unset;
+  left: 0;
+  bottom: 0;
+}
+.images__canvas--top-right {
+  top: unset;
+  left: unset;
+  bottom: unset;
+  right: unset;
+  right: 0;
+  top: 0;
+}
+.images__canvas--bottom-right {
+  top: unset;
+  left: unset;
+  bottom: unset;
+  right: unset;
+  right: 0;
+  bottom: 0;
+}
+.images__copy {
+  position: absolute;
+  z-index: 50;
+  font-weight: 400;
+  top: 50%;
+  width: 30%;
+  padding: 3rem;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  transform: translateY(-50%);
+}
+.images__copy--left {
+  left: 0;
+}
+.images__copy--right {
+  right: 0;
+}
+
+.title {
+  z-index: 100;
+  text-transform: uppercase;
+  letter-spacing: 5vmin;
+  position: absolute;
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 6vmin;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.title--sub {
+  z-index: 100;
+  text-transform: uppercase;
+  position: absolute;
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 2vmin;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.decoration {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 5%;
+  height: 30vmin;
+  width: 30vmin;
+  background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 2px 6px, transparent 4px 12px);
+}
+.decoration--right {
+  left: unset;
+  bottom: unset;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+}
+.decoration--left {
+  top: 0;
+  right: unset;
+}
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
