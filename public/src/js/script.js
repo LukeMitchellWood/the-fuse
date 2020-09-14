@@ -32,7 +32,6 @@ function animator(handler) {
     screen.style.background = `radial-gradient(circle farthest-side, transparent, rgba(0, 0, 0, ${scale * 0.9}))`;
   }
 
-
   document.body.addEventListener('mousemove', mouseMove);
 
 }());
