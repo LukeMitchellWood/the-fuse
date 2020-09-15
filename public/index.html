@@ -7,15 +7,83 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/style.css">
+  <!-- Primary Meta Tags -->
+  <title>The Fuse</title>
+  <meta name="title" content="The Fuse">
+  <meta name="description" content="The Fuse are a heavy, emotional, progressive pop band from melbourne australia. New album; Waiting - coming soon.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thefuse.band/">
+  <meta property="og:title" content="The Fuse">
+  <meta property="og:description" content="The Fuse are a heavy, emotional, progressive pop band from melbourne australia. New album; Waiting - coming soon.">
+  <meta property="og:image" content="https://thefuse.band/images/logos/name@facebookcard-large_ratio@2to1_dim@1000x500.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thefuse.band/">
+  <meta property="twitter:title" content="The Fuse">
+  <meta property="twitter:description" content="The Fuse are a heavy, emotional, progressive pop band from melbourne australia. New album; Waiting - coming soon.">
+  <meta property="twitter:image" content="https://thefuse.band/images/logos/name@twittercard-large_ratio@2to1_dim@1000x500.png">
   <title>The Fuse</title>
 </head>
   <body>
-    <div class="screen">
-      <div class="container">
-        <h1>The Fuse</h1>
-        <p>Punching them in the dick...</p>
-      </div>
+    <div itemscope itemtype="https://schema.org/MusicGroup" class="container">
+      <h1 itemprop="name">The Fus<span class="last-char">e</span></h1>
+      <p itemprop="album">Waiting</p>
     </div>
     <script src="src/js/script.js" charset="utf-8"></script>
+    <!-- rich content -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "MusicGroup",
+      "album": {
+        "@type": "MusicAlbum",
+        "name": "Waiting",
+        "albumProductionType": "https://schema.org/StudioAlbum",
+        "genre": "metal pop progressive",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "the Fuse"
+        }
+      },
+      "name": "The Fuse",
+      "founder": {
+        "@type": "Person",
+        "givenName": "Mario",
+        "familyName": "Schepis"
+      },
+      "foundingDate": "20160601",
+      "description": "The Fuse are a heavy, emotional, progressive pop band from melbourne australia. New album; Waiting - coming soon.",
+      "logo": "https://thefuse.band/images/logos/name@twittercard-large_ratio@2to1_dim@1000x500.png",
+      "musicGroupMember": [
+        {
+          "@type": "Person",
+          "givenName": "Mario",
+          "familyName": "Schepis",
+          "role": "Vocalist"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Justin",
+          "familyName": "Parker",
+          "role": "Guitarist"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Micheal",
+          "familyName": "Bushell",
+          "role": "Bassist"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Luke",
+          "familyName": "Wood",
+          "role": "Guitarist"
+        }
+      ]
+    }
+    </script>
   </body>
 </html>

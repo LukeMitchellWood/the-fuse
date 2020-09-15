@@ -7,24 +7,15 @@
 
 body {
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.78);
-  background: radial-gradient(circle farthest-side, #ECEFF1, #B0BEC5);
+  background: radial-gradient(circle farthest-side, darkslategrey, slategrey);
+  color: whitesmoke;
   height: 100vh;
   width: 100vw;
-}
-
-.screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
 }
 
 .container {
   padding: 0 1rem;
   height: 100vh;
-  max-width: 800px;
   margin: 0 auto;
   flex-direction: column;
   display: flex;
@@ -32,18 +23,21 @@ body {
   align-items: center;
 }
 .container h1 {
-  color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
   text-align: center;
   font-weight: 100;
-  font-size: 5vmin;
-  margin-bottom: 5vmin;
-  letter-spacing: 1rem;
+  font-size: 10rem;
+  margin-bottom: 5rem;
+  letter-spacing: 8rem;
   text-transform: uppercase;
 }
+.container h1 .last-char {
+  letter-spacing: 0rem;
+}
 .container p {
-  text-align: center;
-  font-weight: 300;
-  font-size: 3vmin;
+  font-weight: 100;
+  font-size: 3rem;
+  text-transform: uppercase;
   line-height: 1.5em;
 }
 
