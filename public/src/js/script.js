@@ -3,7 +3,9 @@
 
 (function BackgroundModule() {
   const canvas = document.querySelector('canvas');
-  const ctx = canvas.getContext('2d');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+  }
 
   class Grid {
     constructor(rows, color) {
